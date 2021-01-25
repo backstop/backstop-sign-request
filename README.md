@@ -27,7 +27,7 @@ api is your Backstop API token, which you can change on your Backstop User Profi
 
 
 On MacOS:
-`pipenv run python3 BackstopSignRequest.py -d datafile.json -k keyfile.p12 -p password -u backstopurl -n username -t 'apitoken'
+`pipenv run python3 BackstopSignRequest.py -d datafile.json -k keyfile.p12 -p password -u backstopurl -n username -t 'apitoken'`
 
 
 On Windows:
