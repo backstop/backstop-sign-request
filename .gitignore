@@ -1,0 +1,7 @@
+.idea
+include
+lib
+pyvenv.cfg
+bin
+backstop81.p12
+sr.sh

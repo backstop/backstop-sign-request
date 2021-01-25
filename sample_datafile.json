@@ -1,0 +1,33 @@
+{
+  "data": {
+    "type":"bulk-system-users",
+    "attributes": {
+      "records": [
+        {
+          "userName": "user22a",
+          "disabled": false,
+          "password": "SomePassword22",
+          "email": "user22a@backstopsolutions.com",
+          "firstName": "First22",
+          "lastName": "Last22",
+          "primaryLicense": { "name": "EMAIL_ONLY", "readOnly": false }
+        },
+        {
+          "userName": "user33c",
+          "disabled": false,
+          "password": "SomePassword33",
+          "email": "user33c@backstopsolutions.com",
+          "firstName": "First33",
+          "lastName": "Last33",
+          "primaryLicense": { "name": "FULL", "readOnly": false },
+          "permissionNames": [ "users" ],
+          "userPermissionGroups": [ "Analyst Fund Group A", "IR Group" ],
+          "userPermissionOverrides": [
+            { "permissionBucket": { "name": "Investor Relations" } , "permissionLevels": [ "VIEW", "FULL" ] },
+            { "permissionBucket": { "name": "Fund A (GO)" }, "permissionLevels": [ "NONE" ] }
+          ]
+        }
+      ]
+    }
+  }
+}
