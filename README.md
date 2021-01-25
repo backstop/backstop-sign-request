@@ -25,11 +25,14 @@ backstopurl is the full URL to the API, example: https://mysite.backstopsolution
 username is your Backstop username
 api is your Backstop API token, which you can change on your Backstop User Profile page. The apitoken needs to be enclosed in single quotes.
 
+
 On MacOS:
 `pipenv run python3 BackstopSignRequest.py -d datafile.json -k keyfile.p12 -p password -u backstopurl -n username -t 'apitoken'
-`
+
+
 On Windows:
 `pipenv run python BackstopSignRequest.py -d datafile.json -k keyfile.p12 -p password -u backstopurl -n username -t apitoken`
+
 
 or, use the sample script: 
 MacOS:`backstop-sign-request.sh`
