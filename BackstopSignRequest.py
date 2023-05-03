@@ -112,10 +112,11 @@ api_token = args.token
 time_string = create_time_string()
 request_body_file_text = get_post_body_text_from_file(request_body_file_name)
 
-message = url + time_string + request_body_file_text
+# For an http GET request, message_to_sign = url + time_string
+message_to_sign = url + time_string + request_body_file_text
 
 private_key = get_private_key_from_file(p12_file_name, store_pass)
-encoded_signature = create_signature(private_key, message)
+encoded_signature = create_signature(private_key, message_to_sign)
 
 key_id = os.path.splitext(os.path.basename(p12_file_name))[0]
 

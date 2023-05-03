@@ -15,15 +15,17 @@ On Windows, you might want to add pipenv to your path, see https://www.jetbrains
 Use pipenv to install the dependencies:
 `pipenv install`
 
+## Setup
+# The user who calls the API must have a Security Admin license, and no other licences.
+# Your API allowance must be configured.
 
 ## Run:
-
-datafile.json contains the POST payload data
-keyfile.p12 is an API Signing Key downloaded from your Backstop User Profile page
-password is the API signing key file password you set when you created the API signing key. If you forget your password, you must generate a new signing key
-backstopurl is the full URL to the API, example: https://mysite.backstopsolutions.com/backstop/api/bulk-system-users
-username is your Backstop username
-api is your Backstop API token, which you can change on your Backstop User Profile page. The apitoken needs to be enclosed in single quotes.
+* datafile or -d, contains the POST payload data
+* keyfile.p12 or -k, is an API Signing Key downloaded from your Backstop User Profile page
+* password or -p. is the API signing key file password you set when you created the API signing key. If you forget your password, you must generate a new signing key
+* url or -u, is the full URL to the API, example: https://mysite.backstopsolutions.com/backstop/api/bulk-system-users
+* username or -n,  is your Backstop username.
+* token or -t, is your Backstop API token, which you can change on your Backstop User Profile page. The apitoken needs to be enclosed in single quotes.
 
 
 On MacOS:
