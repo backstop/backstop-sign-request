@@ -16,8 +16,8 @@ Use pipenv to install the dependencies:
 `pipenv install`
 
 ## Setup
-# The user who calls the API must have a Security Admin license, and no other licences.
-# Your API allowance must be configured.
+* The user who calls the API must have a Security Admin license, and no other licences.
+* Your API allowance must be configured.
 
 ## Run:
 * datafile or -d, contains the POST payload data
